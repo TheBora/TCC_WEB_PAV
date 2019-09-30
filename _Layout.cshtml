@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=extend-to-zoom, user-escalable=1" />
+    <meta name="viewport" content="height=extend-to-zoom, user-escalable=1" />
+
+    <!-- aba do navegador-->
+    <link rel="icon" href="~/IMG/Icons/ICONEPAV.png" type="icon">
+    <title>@ViewBag.Title - PAV Piscinas</title>
+
+    <!-- importação bs4-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href="~/Content/Estilo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/CSS/main.css" />
+    <link rel="stylesheet" href="~/Content/CSS/fontawesome-all.min.css" />
+
+    <!-- links js -->
+    <script src="~/Content/JS/jquery-3.3.1.js"></script>
+    <script src="~/Content/JS/bootstrap.min.js"></script> 
+
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery.dropotron.min.js"></script>
+    <script src="~/Content/js/browser.min.js"></script>
+    <script src="~/Content/js/breakpoints.min.js"></script>
+    <script src="~/Content/js/util.js"></script>
+    <script src="~/Content/js/main.js"></script>
+
+    <style>
+        .rodape {
+            background: rgba(48, 48, 48, 0.3) /* Green background with 30% opacity */
+        }
+
+        footer img{
+            width:20px;
+        }
+
+        footer h4{
+            font-size:15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!----aaaaaaaaaaa-->
+    <!-- Nav -->
+    <nav id="nav" class="fixed-top">
+        <ul style="text-transform:uppercase; font-weight:bold;">
+            <li><img src="~/IMG/Logo.png" width="150" /></li>
+            <li><a class="navbar-brand">@Html.ActionLink("Home", "Index", "Home")</a></li>
+            <li><a class="navbar-brand"> @Html.ActionLink("Fale Conosco", "FaleConosco", "Home")</a></li>
+            <li><a class="navbar-brand"> @Html.ActionLink("Como Chegar", "ComoChegar", "Home")</a></li>
+            <li><a class="navbar-brand"> @Html.ActionLink("Serviços", "Servicos", "Home")</a></li>
+            <li><a class="navbar-brand"> @Html.ActionLink("Produtos", "Produtos", "Home")</a></li>
+            <li><a class="navbar-brand"> @Html.ActionLink("Galeria", "Galeria", "Home")</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- corpo das páginas -->
+    <br />
+    <br />
+    <br />
+    <div>
+        <section>
+            @RenderBody()
+        </section>
+    </div>
+    <!-- fim do corpo das páginas -->
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3 rodape">
+
+        <div class="page-footer font-small unique-color-dark" style="position:absolute; right:0; left:0;
+background-color:#e3f2fd;">
+
+
+
+            <div style="background-color: #37c0fb; height:15px;"></div>
+            <br />
+
+            <div class="container">
+
+                <!-- Footer Text -->
+                <div class="container-fluid text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold">Horário de Funcionamento</h5>
+
+                            <!--enfia entre isso-->
+                            <!-- Content -->
+                            <div class="row">
+                                <div class="col-1">
+                                    <img src="~/IMG/calendario.png" />
+                                </div>
+
+                                <div class="col-3">
+                                    <h4 style="font-weight:bold;text-transform:uppercase;">Segunda à Sexta</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-4">
+                                    <h4 style="margin-left:75px;">09:00 às 20:00</h4>
+                                </div>
+                            </div>
+                            
+
+                            <div class="row">
+                                <div class="col-1">
+                                    <img src="~/IMG/calendario.png" />
+                                </div>
+
+                                <div class="col-3">
+                                    <h4 style="font-weight:bold;text-transform:uppercase;">Sábados</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-4">
+                                    <h4 style="margin-left:75px;">08:00 às 13:00</h4>
+                                </div>
+                            </div>
+
+                            <!--e isso-->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mb-md-0 mb-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold">Nossas Informações de Contato</h5>
+                            <div class="row">
+                                    <div class="col-1">
+                                        <img src="~/IMG/Icons/telefoninho.png" />
+                                    </div>
+
+                                    <div class="col-4">
+                                        <h4>(11) 4704-6969</h4>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="~/IMG/Icons/email.png" />
+                                    </div>
+
+                                    <div class="col-4">
+                                        <h4>pav.piscinas@gmail.com.br</h4>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="~/IMG/Icons/tel.png" />
+                                    </div>
+
+                                    <div class="col-4">
+                                        <h4>Milton Neres</h4>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="~/IMG/Icons/endereco.png" />
+                                    </div>
+
+                                    <div class="col-4">
+                                        <h4>@Html.ActionLink("Como chegar!", "ComoChegar", "Home")</h4>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+                    <br />
+                </div>
+                <!-- Footer Text -->
+                <hr style="background-color:lightgray;height:1px;margin-top:-30px;width:75%;" />
+            </div>
+            <!--  O horário de serviço é de segunda à sexta-feira das 09:00 às 20:00 e aos sábados das 8:00 às 13:00.  -->
+
+            <div style="display: flex; justify-content:center; align-items: center;">
+                <a href="https://www.instagram.com/?hl=pt-br" style="border-style:none;"><img src="~/IMG/Icons/insta.png" style="width:30px;" title="Instagram" /></a>
+                <a href="https://twitter.com/login?lang=pt" style="border-style:none;"><img src="~/IMG/Icons/twitter.png" style="width:30px;" title="Twitter" /></a>
+            </div>
+
+            <div class="footer-copyright text-center py-3">
+                <h6>&copy; PAV Piscinas | 2009 - @DateTime.Now.Year <br /> Todos os direitos reservados.</h6>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
