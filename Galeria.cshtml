@@ -1,0 +1,143 @@
+﻿@{ ViewBag.Title = "Galeria"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<style type="text/css">
+    .zoomzinho {
+        cursor: zoom-in;
+    }
+
+    .tamanhogaleria {
+        height: 228px;
+        width: 301px;
+    }
+
+    .modalimg{
+        width:600px;
+        height:400px;
+    }
+</style>
+
+<script>
+
+    //var IMG01 = $("#img01").getAttribute("src");
+    //var IMG02 = $("#img02").getAttribute("src");
+    //var IMG03 = $("#img03").getAttribute("src");
+    //var IMG04 = $("#img04").getAttribute("src");
+    //var IMG05 = $("#img05").getAttribute("src");
+    //var IMG06 = $("#img06").getAttribute("src");
+    //var IMG07 = $("#img07").getAttribute("src");
+    //var IMG08 = $("#img08").getAttribute("src");
+    //var IMG09 = $("#img09").getAttribute("src");
+    //var IMG10 = $("#img10").getAttribute("src");
+    //var IMG11 = $("#img11").getAttribute("src");
+    //var IMG12 = $("#img12").getAttribute("src");
+
+    //$("#AbreFotinha").modal(show("src"))
+
+    //$(document).ready(function () {
+    //    $('.fotinha').click(function () {
+    //        $('#generiquinhaID').attr('src', $(this).attr('src'));
+    //        $('#modalZinhaId').modal('show')
+    //    });
+    //});   
+
+    //$(".abrirModal").click(function () {
+    //    var url = $(this).find("img").attr("src");
+    //    $("#AbreFotinha img").attr("src", url);
+    //    $("#AbreFotinha").modal("show");
+    //});
+
+    //$(".abrirModal").click(function () {
+    //    var url = $(this).find("img").attr("src");
+    //    $("#myModal img").attr("src", url);
+    //    $("#myModal").modal("show");
+    //});
+
+</script>
+
+<div class="container">
+    <!-- Page Content -->
+
+    <br />
+    <h2>Galeria</h2>
+    <hr style="background-color:lightgray;height:1px;margin-top:-30px;" />    
+    <div class="row">
+        <h4>Veja abaixo alguns de nossos trabalhos.</h4>
+    </div>
+    <div class="row text-center text-lg-left">
+
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina1.jpg" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina1.jpg" id="img01"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina2.jpg" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina2.jpg"  id="img02"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina3.jpg"  data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina3.jpg" id="img03"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina 04.jpg"  data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina 04.jpg" id="img04"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina5.jfif"  data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina5.jfif" id="img05"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina6.jfif" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina6.jfif" id="img06"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina7.jpg" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina7.jpg" id="img07"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina8.jfif" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina8.jfif" id="img08"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina9.jpg" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina9.jpg" id="img09"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina10.jpg" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina10.jpg" id="img10"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina11.jpg" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina11.jpg" id="img11"/>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="~/IMG/piscina12.jpg" data-toggle="modal" data-target="#AbreFotinha">
+                <img class="img-fluid img-thumbnail zoomzinho tamanhogaleria fotinha" src="~/IMG/piscina12.jpg" id="img12"/>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+<!--MODAL-->
+<!-- Modal -->
+<div class="modal fade" id="AbreFotinha"  tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+                <img class="img-fluid img-thumbnail zoomzinho modalimg" src="~/IMG/piscina1.jpg" />
+                <br/>
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Fechar</button>
+            </div>
+    </div>
+</div>
+<br />

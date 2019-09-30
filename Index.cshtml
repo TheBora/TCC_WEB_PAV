@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <h2 class="display-4">Bem vindo(a) à PAV Piscinas!</h2>
+    <hr class="my-4">
+    <p>Fique à vontade para dar uma olhadinha por aí!</p>
+</div>  
+
+<!-- Highlights -->
+<section class="wrapper style1">
+    <div class="container">
+        <div class="row gtr-200">
+            <section class="col-4 col-12-narrower">
+                <div class="box highlight">
+                    <i class="icon solid major fa-paper-plane"></i>
+                    <h3>Realizamos Serviços em SP</h3>
+                    <p>
+                        Fornecemos nossos produtos e serviços para todo o estado de São Paulo, mesmo se sua casa, empresa ou instituição ficar longe do litoral! Veja alguns @Html.ActionLink("modelos", "Galeria", "Home") para se inspirar
+                    </p>
+                </div>
+            </section>
+            <section class="col-4 col-12-narrower">
+                <div class="box highlight">
+                    <i class="icon solid major fa-pencil-alt"></i>
+                    <h3>Entre em Contato</h3>
+                    <p>Você pode entrar em contato por telefone ou pelo @Html.ActionLink("Fale Conosco", "FaleConosco", "Home") para enviar elogios, reclamações e sugestões. Se preferir, pode nos visitar! <br/>Saiba @Html.ActionLink("como chegar", "ComoChegar", "Home").</p>
+                </div>
+            </section>
+            <section class="col-4 col-12-narrower">
+                <div class="box highlight">
+                    <i class="icon solid major fa-wrench"></i>
+                    <h3>Realizamos Manutenções</h3>
+                    <p>Se precisar de assistência técnica para sua piscina ou precisa de produtos para limpeza e controle de micróbios? Nós temos! <br/>Consulte nossos @Html.ActionLink("produtos", "Produtos", "Home") e @Html.ActionLink("serviços", "Servicos", "Home").</p>
+                </div>
+            </section>
+        </div>
+
+        <!--carrossel-->
+        <div>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                        <img src="~/IMG/piscina1.jpg" alt="Los Angeles">
+                        <div class="carousel-caption">
+                            <h3>Piscina para Gramado</h3>
+                            <p>Retangular em mármore branco</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="~/IMG/piscina2.jpg" alt="Chicago" >
+                        <div class="carousel-caption">
+                            <h3>Piscina Abobadada</h3>
+                            <p>Com fonte de água acoplada e escada</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="~/IMG/piscina3.jpg" alt="New York">
+                        <div class="carousel-caption">
+                            <h3>Piscina Abobadada</h3>
+                            <p>Escada avulsa</p>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<TCC_Web_PAV.Models.tblProduto>
+
+@{
+    ViewBag.Title = "ListarProdutos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListarProdutos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NOME_PROD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCRICAO_PROD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PREÇO_PROD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STATUS_PROD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria_Prod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QUANTIDADE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imagem)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOME_PROD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCRICAO_PROD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PREÇO_PROD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STATUS_PROD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria_Prod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QUANTIDADE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imagem)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdProduto }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdProduto }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdProduto })
+        </td>
+    </tr>
+}
+
+</table>

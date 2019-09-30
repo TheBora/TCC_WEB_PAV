@@ -1,0 +1,121 @@
+﻿@model TCC_Web_PAV.Models.tb_faleconosco_web
+
+@{
+    ViewBag.Title = "FaleConosco";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<script>
+    function confirmar()
+    {
+        alert('Mensagem enviada com sucesso');
+    }
+</script>*@
+
+<style>
+    .formulario {
+        font-size: 20px;
+        color: darkgray;
+    }
+</style>
+
+<div class="container">
+    <br />
+    <!-- Page Content -->
+    <h2>Fale Conosco</h2>
+    <hr style="background-color:lightgray;height:1px;margin-top:-30px;" />
+    <div class="row">
+        <h4>Contato por aqui mesmo ou informações de telefone e e-mail se preferir.</h4>
+    </div>
+    <!--Form-->
+    <div class="row">
+
+        <section class="col-6">
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                <div class="row gtr-50">
+                    <div class="col-12 form-group">
+                        <input type="text" name="nome_remetente" id="nome_remetente" placeholder="Nome e Sobrenome" class="form-control formulario" />
+                        @Html.ValidationMessageFor(model => model.nome_remetente, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-6 col-12-mobilep form-group">
+                        <input type="text" name="telefone_remetente" id="telefone_remetente" placeholder="Telefone" class="form-control formulario" />
+                        @Html.ValidationMessageFor(model => model.telefone_remetente, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-6 col-12-mobilep form-group">
+                        <input type="text" name="email_remetente" id="email_remetente" placeholder="E-mail" class="form-control formulario" />
+                        @Html.ValidationMessageFor(model => model.email_remetente, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-12 form-group">
+                        <textarea name="mensagem" id="mensagem" placeholder="Descreva aqui!" rows="6" class="form-control formulario" maxlength="250"></textarea>
+                        @Html.ValidationMessageFor(model => model.mensagem, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-12 form-group">
+                        <ul class="actions">
+                            <li><input type="submit" class="btn-outline-primary" value="Enviar!" /></li>
+                        </ul>
+                    </div>
+
+                </div>
+            }
+        </section>
+        <div class="col-1">
+
+            <hr style="background-color:darkgray;width:2px; height:350px;" />
+
+        </div>
+
+        <section class="col-5">
+            <div class="row">
+                <h2>Nossas Informações de Contato</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <img src="~/IMG/Icons/telefoninho.png" />
+                </div>
+
+                <div class="col-4">
+                    <h4>(11) 4704-6969</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <img src="~/IMG/Icons/email.png" />
+                </div>
+
+                <div class="col-4">
+                    <h4>pav.piscinas@gmail.com.br</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <img src="~/IMG/Icons/tel.png" />
+                </div>
+
+                <div class="col-4">
+                    <h4>Milton Neres</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <img src="~/IMG/Icons/endereco.png" />
+                </div>
+
+                <div class="col-4">
+                    <h4>@Html.ActionLink("Como chegar!", "ComoChegar", "Home")</h4>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</div>
